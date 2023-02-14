@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Manrope"; 
+  min-height: 100vh;
+  justify-content: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.main {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  margin: 10% 15%;
+  border-radius: 15px;
+  width: 950px;
+  text-align: center;
+} 
+
+.img {
+  width: 400px;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 420px;
+  padding-top: 10px;
+}
+
+.info {
+  width: 450px;
+  margin-right: 20px;
+  text-align: start;
+  padding: 60px;
+
+}
+
+.share {
+  display: none;
+}
+
+.icon {
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -80px;
+  justify-content: space-between;
+}
+
+.info-h1 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  color: hsl(217, 19%, 35%);
+  width: 420px
+}
+
+.info-para {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: hsl(214, 17%, 51%);
+  margin: 25px 0px;
+  width: 420px;
+}
+
+.person-img {
+  border-radius: 100%;
+  height: 50px;
+}
+
+.name {
+  margin-left: 25px;
+}
+
+.name-h2 {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: hsl(217, 19%, 35%);
+}
+
+.name-para {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: hsl(214, 17%, 51%);
+  margin-top: 10px;
+}
+
+.person-info {
+  display: flex;
+}
+
+.btn {
+  border-radius: 100%;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.btn-img {
+  height: 20px;
+}
+
+.share-h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: hsl(210, 46%, 95%);
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.foot {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  color: hsl(229, 23%, 23%);
+  margin: 50px 20px;
+}
+
+.foot a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1200px) {
+    .main{
+      margin: 30% 5%;
+    }
+  }
+
+
+  @media screen and (max-width:970) {
+
+    .main{
+      width:90%;
+      margin-left:10px;
+    }
+
+    .info, .info-h1, .info-para, .person{
+      width: 80%;
+    }
+
+  }
+
+  @media screen and (max-width:768px) {
+    .main{
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+    }
+
+    .img, .main-img{
+      width: 600px;
+      border-radius: 15px 15px 0px 0px;;
+    }
+
+    .icon{
+      width: 600px;
+      border-radius: 0px 0px 15px 15px;
+      padding: 35px;
+      justify-content: start;
+      margin-top: -20px;
+      margin-left: -300px;
+    }
+
+    .share-img{
+      padding: 0px 35px;
+      height:30px;
+    }
+
+    .btn-active{
+      margin-left: 250px;
+      margin-top: 5px;
+      z-index: 1;
+      background-color: white;
+    }
+
+    .button{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .info{
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .person{
+      width: 600px;
+    }
+  }
